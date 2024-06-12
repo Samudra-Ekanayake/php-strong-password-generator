@@ -1,5 +1,8 @@
 <?php
-$dizionario = "qwertyuiopasdfghjklzxcvbnm123456789!.:;,"
+
+
+include "functions.php";
+
 /* $lenght = $_GET['lenght'];
 $password = ""; */
 
@@ -31,6 +34,9 @@ if (isset($_GET['password'])) {
     $passwordOscurata = "";
     for ($i = 0; $i < strlen($password); $i++) {
         $passwordOscurata .= "X";
+
+        $password = generatePassword ($length, $characters);
+
     }
     echo "<p>Password oscurata: $passwordOscurata</p>";
 } else {

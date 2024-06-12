@@ -16,8 +16,8 @@
         <h1>Generatore di Password</h1>
         <form action="result.php" method="GET">
             <div class="mb-3">
-                <label for="password" class="form-label">Inserisci la tua password</label>
-                <input type="text" name="password" id="password" class="form-control" maxlength="8">
+                <label for="length" class="form-label">Inserisci la tua password</label>
+                <input type="text" name="password" id="length" class="form-control" maxlength="8">
             </div>
             <button type="submit" class="btn btn-primary">Invia</button>
         </form>
